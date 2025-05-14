@@ -204,9 +204,10 @@ main > div {
 @media screen and (min-width: 426px) {
   #container-div {
     max-width: 455px;
-    #gallows-div > #counter-span {
-      font-size: 3vw;
-    }
+  }
+
+  #counter-span {
+    font-size: 3vw;
   }
 }
 
@@ -216,13 +217,15 @@ main > div {
     grid-template-rows: 43vh;
     grid-template-columns: 50%;
     align-content: space-between;
-    #container-div,
-    #question-div {
-      margin-top: 10%;
-    }
   }
+  #container-div,
+  #question-div {
+    margin-top: 10%;
+  }
+
   #answer-div {
     grid-column: 2 / 3;
+
     span {
       font-size: 3vw;
       height: 48px;
@@ -239,21 +242,25 @@ main > div {
     margin: auto;
     align-items: center;
   }
+
   #container-div {
     grid-row: 1 / 4;
     grid-column: 1 / 2;
     max-width: 100%;
-    #gallows-div {
-      left: 10px;
-    }
   }
+
+  #gallows-div {
+    left: 10px;
+  }
+
   #question-div {
     grid-row: 1 / 2;
-
-    #question {
-      font-size: 2rem;
-    }
   }
+
+  #question {
+    font-size: 2rem;
+  }
+
   #answer-div {
     grid-row: 2 / 3;
     span {
@@ -262,15 +269,17 @@ main > div {
       font-size: 2vw;
     }
   }
+
   #keyboard {
     position: relative;
     grid-row: 3 / 4;
     grid-column: 2 / 3;
-    .key {
-      width: 10%;
-      height: auto;
-      font-size: 2vw;
-    }
+  }
+
+  .key {
+    width: 10%;
+    height: auto;
+    font-size: 2vw;
   }
 }
 
@@ -279,19 +288,19 @@ main > div {
   main {
     gap: 30px;
   }
-  #question-div #question {
+
+  #question {
     font-size: 4vw;
   }
+
   #answer-div {
     span {
       font-size: 2.5vw;
       height: 4vw;
     }
   }
-  #keyboard {
-    .key {
-      font-size: 3vw;
-    }
+  .key {
+    font-size: 3vw;
   }
 }
 
@@ -303,21 +312,25 @@ main > div {
     margin: auto;
     align-items: center;
   }
+
   #container-div {
     grid-row: 1 / 4;
     grid-column: 1 / 2;
     max-width: 100%;
-    #gallows-div {
-      left: 10px;
-    }
   }
+
+  #gallows-div {
+    left: 10px;
+  }
+
   #question-div {
     grid-row: 1 / 2;
-
-    #question {
-      font-size: 1.25rem;
-    }
   }
+
+  #question {
+    font-size: 1.25rem;
+  }
+
   #answer-div {
     grid-row: 2 / 3;
     span {
@@ -326,14 +339,16 @@ main > div {
       font-size: 2vw;
     }
   }
+
   #keyboard {
     position: relative;
     grid-row: 3 / 4;
     grid-column: 2 / 3;
-    .key {
-      width: 10%;
-      height: auto;
-      font-size: 2vw;
-    }
+  }
+
+  .key {
+    width: 10%;
+    height: auto;
+    font-size: 2vw;
   }
 }

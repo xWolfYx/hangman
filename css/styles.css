@@ -218,7 +218,7 @@ main > div {
   #container-div {
     max-width: 455px;
   }
-  #container-div #gallows-div > #counter-span {
+  #counter-span {
     font-size: 3vw;
   }
 }
@@ -228,8 +228,8 @@ main > div {
     grid-template-columns: 50%;
     align-content: space-between;
   }
-  main #container-div,
-  main #question-div {
+  #container-div,
+  #question-div {
     margin-top: 10%;
   }
   #answer-div {
@@ -253,13 +253,13 @@ main > div {
     grid-column: 1/2;
     max-width: 100%;
   }
-  #container-div #gallows-div {
+  #gallows-div {
     left: 10px;
   }
   #question-div {
     grid-row: 1/2;
   }
-  #question-div #question {
+  #question {
     font-size: 2rem;
   }
   #answer-div {
@@ -275,7 +275,7 @@ main > div {
     grid-row: 3/4;
     grid-column: 2/3;
   }
-  #keyboard .key {
+  .key {
     width: 10%;
     height: auto;
     font-size: 2vw;
@@ -285,14 +285,14 @@ main > div {
   main {
     gap: 30px;
   }
-  #question-div #question {
+  #question {
     font-size: 4vw;
   }
   #answer-div span {
     font-size: 2.5vw;
     height: 4vw;
   }
-  #keyboard .key {
+  .key {
     font-size: 3vw;
   }
 }
@@ -309,13 +309,13 @@ main > div {
     grid-column: 1/2;
     max-width: 100%;
   }
-  #container-div #gallows-div {
+  #gallows-div {
     left: 10px;
   }
   #question-div {
     grid-row: 1/2;
   }
-  #question-div #question {
+  #question {
     font-size: 1.25rem;
   }
   #answer-div {
@@ -331,7 +331,7 @@ main > div {
     grid-row: 3/4;
     grid-column: 2/3;
   }
-  #keyboard .key {
+  .key {
     width: 10%;
     height: auto;
     font-size: 2vw;
