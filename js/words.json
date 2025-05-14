@@ -1,0 +1,372 @@
+{
+  "questions": [
+    {
+      "word": "volcano",
+      "hint": "Erupts with molten rock"
+    },
+    {
+      "word": "comet",
+      "hint": "A ball of ice and dust"
+    },
+    {
+      "word": "chimney",
+      "hint": "Smoke goes through this"
+    },
+    {
+      "word": "pirate",
+      "hint": "Seafaring treasure hunter"
+    },
+    {
+      "word": "glacier",
+      "hint": "Mass of slow-moving ice"
+    },
+    {
+      "word": "crater",
+      "hint": "A hole formed by impact"
+    },
+    {
+      "word": "sailboat",
+      "hint": "Wind-powered watercraft"
+    },
+    {
+      "word": "treasure",
+      "hint": "Valuable items, often buried"
+    },
+    {
+      "word": "magnet",
+      "hint": "Attracts metal objects"
+    },
+    {
+      "word": "sculpture",
+      "hint": "Art carved from materials"
+    },
+    {
+      "word": "circus",
+      "hint": "Big top with performers"
+    },
+    {
+      "word": "desert",
+      "hint": "Dry, sandy landscape"
+    },
+    {
+      "word": "astronaut",
+      "hint": "Person who travels to space"
+    },
+    {
+      "word": "crystal",
+      "hint": "Solid structure with geometric shape"
+    },
+    {
+      "word": "whale",
+      "hint": "Largest ocean mammal"
+    },
+    {
+      "word": "parachute",
+      "hint": "Slows descent from the sky"
+    },
+    {
+      "word": "bamboo",
+      "hint": "Tall, fast-growing grass"
+    },
+    {
+      "word": "helicopter",
+      "hint": "Flying vehicle with rotating blades"
+    },
+    {
+      "word": "flamingo",
+      "hint": "Pink bird with long legs"
+    },
+    {
+      "word": "zeppelin",
+      "hint": "Large airship, often used in the past"
+    },
+    {
+      "word": "kangaroo",
+      "hint": "Hops around"
+    },
+    {
+      "word": "dolphin",
+      "hint": "Smart, playful ocean mammal"
+    },
+    {
+      "word": "telescope",
+      "hint": "For gazing far away"
+    },
+    {
+      "word": "computer",
+      "hint": "Digital brain"
+    },
+    {
+      "word": "rocket",
+      "hint": "Shoots into the sky"
+    },
+    {
+      "word": "robot",
+      "hint": "Mechanical helper"
+    },
+    {
+      "word": "zebra",
+      "hint": "Striped wild animal"
+    },
+    {
+      "word": "lighthouse",
+      "hint": "Shining in the dark"
+    },
+    {
+      "word": "mirror",
+      "hint": "Reflects your image"
+    },
+    {
+      "word": "parrot",
+      "hint": "Colorful bird that can mimic speech"
+    },
+    {
+      "word": "rainbow",
+      "hint": "Colors after rain"
+    },
+    {
+      "word": "whale",
+      "hint": "Ocean giant"
+    },
+    {
+      "word": "tornado",
+      "hint": "Spinning windstorm"
+    },
+    {
+      "word": "mountain",
+      "hint": "A big lump of Earth"
+    },
+    {
+      "word": "bicycle",
+      "hint": "Pedal-powered vehicle"
+    },
+    {
+      "word": "hurricane",
+      "hint": "A massive storm"
+    },
+    {
+      "word": "paradise",
+      "hint": "A perfect, beautiful place"
+    },
+    {
+      "word": "volcano",
+      "hint": "Molten rock explosion"
+    },
+    {
+      "word": "pizza",
+      "hint": "Cheese and toppings on dough"
+    },
+    {
+      "word": "hologram",
+      "hint": "3D projection made of light"
+    },
+    {
+      "word": "guitar",
+      "hint": "Stringed music maker"
+    },
+    {
+      "word": "astronomy",
+      "hint": "The study of stars and planets"
+    },
+    {
+      "word": "library",
+      "hint": "A place with many books"
+    },
+    {
+      "word": "universe",
+      "hint": "All of everything"
+    },
+    {
+      "word": "scuba",
+      "hint": "Underwater diving equipment"
+    },
+    {
+      "word": "oxygen",
+      "hint": "What we breathe"
+    },
+    {
+      "word": "cactus",
+      "hint": "Spiny desert plant"
+    },
+    {
+      "word": "jungle",
+      "hint": "Tropical forest"
+    },
+    {
+      "word": "planet",
+      "hint": "A space ball"
+    },
+    {
+      "word": "giraffe",
+      "hint": "A tall neck animal"
+    },
+    {
+      "word": "sudoku",
+      "hint": "A number puzzle"
+    },
+    {
+      "word": "sapphire",
+      "hint": "Blue precious stone"
+    },
+    {
+      "word": "zodiac",
+      "hint": "Astrological symbols"
+    },
+    {
+      "word": "aviator",
+      "hint": "Airplane pilot"
+    },
+    {
+      "word": "waterfall",
+      "hint": "Cascading water from a height"
+    },
+    {
+      "word": "shark",
+      "hint": "Large predatory fish"
+    },
+    {
+      "word": "igloo",
+      "hint": "Ice house"
+    },
+    {
+      "word": "orchestra",
+      "hint": "Group of musicians"
+    },
+    {
+      "word": "flute",
+      "hint": "Woodwind musical instrument"
+    },
+    {
+      "word": "pyramid",
+      "hint": "A pointy ancient structure"
+    },
+    {
+      "word": "submarine",
+      "hint": "Underwater vehicle"
+    },
+    {
+      "word": "koala",
+      "hint": "Tree-climbing marsupial"
+    },
+    {
+      "word": "sunflower",
+      "hint": "Yellow blooming flower"
+    },
+    {
+      "word": "chocolate",
+      "hint": "Sweet treat made from cocoa"
+    },
+    {
+      "word": "coral",
+      "hint": "Marine reef-building organism"
+    },
+    {
+      "word": "scorpion",
+      "hint": "Arachnid with a stinger"
+    },
+    {
+      "word": "caterpillar",
+      "hint": "Larvae of butterflies"
+    },
+    {
+      "word": "statue",
+      "hint": "Sculpted figure"
+    },
+    {
+      "word": "sunshine",
+      "hint": "Bright sunlight"
+    },
+    {
+      "word": "lighthouse",
+      "hint": "Guides ships through the night"
+    },
+    {
+      "word": "squirrel",
+      "hint": "Tree-dwelling rodent"
+    },
+    {
+      "word": "beehive",
+      "hint": "Home of bees"
+    },
+    {
+      "word": "honey",
+      "hint": "Sweet food made by bees"
+    },
+    {
+      "word": "glove",
+      "hint": "Worn on the hand"
+    },
+    {
+      "word": "cloud",
+      "hint": "Fluffy vapor in the sky"
+    },
+    {
+      "word": "safari",
+      "hint": "African animal watching trip"
+    },
+    {
+      "word": "octopus",
+      "hint": "Eight-legged ocean creature"
+    },
+    {
+      "word": "scooter",
+      "hint": "Small vehicle with two wheels"
+    },
+    {
+      "word": "fireplace",
+      "hint": "Place for a fire inside"
+    },
+    {
+      "word": "astronaut",
+      "hint": "Space explorer"
+    },
+    {
+      "word": "beach",
+      "hint": "Sandy shore by the sea"
+    },
+    {
+      "word": "jellyfish",
+      "hint": "Gelatinous sea creature"
+    },
+    {
+      "word": "acorn",
+      "hint": "Nut from an oak tree"
+    },
+    {
+      "word": "panda",
+      "hint": "Black and white bear"
+    },
+    {
+      "word": "snowman",
+      "hint": "Carved from snow"
+    },
+    {
+      "word": "clownfish",
+      "hint": "Brightly colored reef fish"
+    },
+    {
+      "word": "mushroom",
+      "hint": "Fungi with a cap"
+    },
+    {
+      "word": "daisy",
+      "hint": "White petaled flower"
+    },
+    {
+      "word": "igloo",
+      "hint": "A house made of ice"
+    },
+    {
+      "word": "pineapple",
+      "hint": "Tropical fruit with spiky skin"
+    },
+    {
+      "word": "dinosaur",
+      "hint": "Extinct giant reptiles"
+    },
+    {
+      "word": "sunset",
+      "hint": "End of the day's light"
+    }
+  ]
+}

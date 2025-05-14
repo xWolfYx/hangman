@@ -1,0 +1,331 @@
+@font-face {
+  font-family: "Comic Sans";
+  src: url(../font_comic_sans_ms/comic.ttf);
+}
+@font-face {
+  font-family: "Comic Sans";
+  font-weight: bold;
+  src: url(../font_comic_sans_ms/comicbd.ttf);
+}
+@font-face {
+  font-family: "Comic Sans";
+  font-style: italic;
+  src: url(../font_comic_sans_ms/comici.ttf);
+}
+@font-face {
+  font-family: "Comic Sans";
+  font-weight: bold;
+  font-style: italic;
+  src: url(../font_comic_sans_ms/comicz.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans", sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+main {
+  display: grid;
+  gap: 25px;
+  grid-template-rows: repeat(3, auto);
+  justify-items: center;
+}
+
+main > div {
+  min-width: 300px;
+  width: 98%;
+  max-width: 1440px;
+}
+
+#question-div {
+  text-align: center;
+}
+#question-div #question {
+  font-size: 5vw;
+}
+
+#container-div {
+  position: relative;
+  aspect-ratio: 1/0.8;
+  margin-top: 10px;
+  border: 5px solid black;
+  padding: 1rem;
+}
+#container-div #gallows {
+  height: 100%;
+}
+#container-div #gallows-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 80%;
+}
+#container-div #gallows-div #part1,
+#container-div #gallows-div #part2,
+#container-div #gallows-div #part3,
+#container-div #gallows-div #part4,
+#container-div #gallows-div #part5,
+#container-div #gallows-div #part6 {
+  position: absolute;
+  height: 20%;
+}
+#container-div #gallows-div #part1 {
+  right: 30%;
+  top: 22%;
+}
+#container-div #gallows-div #part2 {
+  right: 36%;
+  top: 42%;
+}
+#container-div #gallows-div #part3 {
+  right: 36%;
+  top: 42%;
+}
+#container-div #gallows-div #part4 {
+  right: 26%;
+  top: 42%;
+}
+#container-div #gallows-div #part5 {
+  right: 36%;
+  top: 61%;
+}
+#container-div #gallows-div #part6 {
+  right: 26%;
+  top: 61%;
+}
+#container-div #counter-span {
+  position: absolute;
+  right: 50%;
+  bottom: -20%;
+  font-size: 6vw;
+}
+
+#answer-div {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+#answer-div span {
+  aspect-ratio: 1/1;
+  display: inline-block;
+  height: 9vw;
+  font-size: 6vw;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+#keyboard {
+  position: fixed;
+  bottom: 1.25rem;
+  min-width: 300px;
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 0.15rem;
+}
+#keyboard .key {
+  aspect-ratio: 1/1;
+  height: 9.1vw;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 1px 1px 4px black;
+  font-size: 4.3vw;
+  cursor: pointer;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+#keyboard .key:active {
+  box-shadow: 1px 1px 2px;
+}
+
+#modal {
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(500px, 90%);
+  height: 30%;
+  background-color: white;
+  border: 4px solid rgb(95, 95, 95);
+  border-radius: 20px;
+}
+#modal #modal-content {
+  padding: 0.6rem;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+#modal #modal-content p {
+  margin-bottom: 1.25rem;
+  word-wrap: break-word;
+  font-size: 1.2rem;
+}
+#modal #modal-content #restart-button {
+  font-size: 1.2rem;
+}
+#modal #restart-button {
+  cursor: pointer;
+  background-color: inherit;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+#modal #restart-button:hover {
+  background-color: #272727;
+  color: white;
+}
+#modal #restart-button:active {
+  background-color: initial;
+  color: initial;
+}
+
+#overlay {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+@media screen and (min-width: 426px) {
+  #container-div {
+    max-width: 455px;
+  }
+  #container-div #gallows-div > #counter-span {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 769px) {
+  main {
+    grid-template-rows: 43vh;
+    grid-template-columns: 50%;
+    align-content: space-between;
+  }
+  main #container-div,
+  main #question-div {
+    margin-top: 10%;
+  }
+  #answer-div {
+    grid-column: 2/3;
+  }
+  #answer-div span {
+    font-size: 3vw;
+    height: 48px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  main {
+    grid-template-rows: auto auto auto;
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+  }
+  #container-div {
+    grid-row: 1/4;
+    grid-column: 1/2;
+    max-width: 100%;
+  }
+  #container-div #gallows-div {
+    left: 10px;
+  }
+  #question-div {
+    grid-row: 1/2;
+  }
+  #question-div #question {
+    font-size: 2rem;
+  }
+  #answer-div {
+    grid-row: 2/3;
+  }
+  #answer-div span {
+    width: 10%;
+    height: auto;
+    font-size: 2vw;
+  }
+  #keyboard {
+    position: relative;
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  #keyboard .key {
+    width: 10%;
+    height: auto;
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main {
+    gap: 30px;
+  }
+  #question-div #question {
+    font-size: 4vw;
+  }
+  #answer-div span {
+    font-size: 2.5vw;
+    height: 4vw;
+  }
+  #keyboard .key {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  main {
+    grid-template-rows: auto auto auto;
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+  }
+  #container-div {
+    grid-row: 1/4;
+    grid-column: 1/2;
+    max-width: 100%;
+  }
+  #container-div #gallows-div {
+    left: 10px;
+  }
+  #question-div {
+    grid-row: 1/2;
+  }
+  #question-div #question {
+    font-size: 1.25rem;
+  }
+  #answer-div {
+    grid-row: 2/3;
+  }
+  #answer-div span {
+    width: 10%;
+    height: auto;
+    font-size: 2vw;
+  }
+  #keyboard {
+    position: relative;
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  #keyboard .key {
+    width: 10%;
+    height: auto;
+    font-size: 2vw;
+  }
+}/*# sourceMappingURL=styles.css.map */
