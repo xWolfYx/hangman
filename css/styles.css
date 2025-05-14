@@ -45,7 +45,8 @@ main > div {
 #question-div {
   text-align: center;
 }
-#question-div #question {
+
+#question {
   font-size: 5vw;
 }
 
@@ -56,50 +57,53 @@ main > div {
   border: 5px solid black;
   padding: 1rem;
 }
-#container-div #gallows {
+
+#gallows {
   height: 100%;
 }
-#container-div #gallows-div {
+
+#gallows-div {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   height: 80%;
 }
-#container-div #gallows-div #part1,
-#container-div #gallows-div #part2,
-#container-div #gallows-div #part3,
-#container-div #gallows-div #part4,
-#container-div #gallows-div #part5,
-#container-div #gallows-div #part6 {
+#gallows-div #part1,
+#gallows-div #part2,
+#gallows-div #part3,
+#gallows-div #part4,
+#gallows-div #part5,
+#gallows-div #part6 {
   position: absolute;
   height: 20%;
 }
-#container-div #gallows-div #part1 {
+#gallows-div #part1 {
   right: 30%;
   top: 22%;
 }
-#container-div #gallows-div #part2 {
+#gallows-div #part2 {
   right: 36%;
   top: 42%;
 }
-#container-div #gallows-div #part3 {
+#gallows-div #part3 {
   right: 36%;
   top: 42%;
 }
-#container-div #gallows-div #part4 {
+#gallows-div #part4 {
   right: 26%;
   top: 42%;
 }
-#container-div #gallows-div #part5 {
+#gallows-div #part5 {
   right: 36%;
   top: 61%;
 }
-#container-div #gallows-div #part6 {
+#gallows-div #part6 {
   right: 26%;
   top: 61%;
 }
-#container-div #counter-span {
+
+#counter-span {
   position: absolute;
   right: 50%;
   bottom: -20%;
@@ -133,7 +137,8 @@ main > div {
   justify-content: center;
   gap: 0.15rem;
 }
-#keyboard .key {
+
+.key {
   aspect-ratio: 1/1;
   height: 9.1vw;
   overflow: hidden;
@@ -145,7 +150,7 @@ main > div {
   text-align: center;
   -webkit-tap-highlight-color: transparent;
 }
-#keyboard .key:active {
+.key:active {
   box-shadow: 1px 1px 2px;
 }
 
@@ -164,33 +169,36 @@ main > div {
   border: 4px solid rgb(95, 95, 95);
   border-radius: 20px;
 }
-#modal #modal-content {
+
+#modal-content {
   padding: 0.6rem;
   text-align: center;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
-#modal #modal-content p {
+#modal-content p {
   margin-bottom: 1.25rem;
   word-wrap: break-word;
   font-size: 1.2rem;
 }
-#modal #modal-content #restart-button {
+
+#restart-button {
   font-size: 1.2rem;
 }
-#modal #restart-button {
+
+#restart-button {
   cursor: pointer;
   background-color: inherit;
   border: 1px solid black;
   padding: 0.5rem 1rem;
   border-radius: 20px;
 }
-#modal #restart-button:hover {
+#restart-button:hover {
   background-color: #272727;
   color: white;
 }
-#modal #restart-button:active {
+#restart-button:active {
   background-color: initial;
   color: initial;
 }

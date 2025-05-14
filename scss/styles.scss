@@ -26,9 +26,10 @@ main > div {
 
 #question-div {
   text-align: center;
-  #question {
-    font-size: 5vw;
-  }
+}
+
+#question {
+  font-size: 5vw;
 }
 
 #container-div {
@@ -37,58 +38,60 @@ main > div {
   margin-top: 10px;
   border: 5px solid black;
   padding: 1rem;
-  #gallows {
-    height: 100%;
-  }
-  #gallows-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    height: 80%;
+}
 
-    #part1,
-    #part2,
-    #part3,
-    #part4,
-    #part5,
-    #part6 {
-      position: absolute;
-      height: 20%;
-    }
+#gallows {
+  height: 100%;
+}
 
-    #part1 {
-      right: 30%;
-      top: 22%;
-    }
-    #part2 {
-      right: 36%;
-      top: 42%;
-    }
-    #part3 {
-      right: 36%;
-      top: 42%;
-    }
-    #part4 {
-      right: 26%;
-      top: 42%;
-    }
-    #part5 {
-      right: 36%;
-      top: 61%;
-    }
-    #part6 {
-      right: 26%;
-      top: 61%;
-    }
-  }
+#gallows-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 80%;
 
-  #counter-span {
+  #part1,
+  #part2,
+  #part3,
+  #part4,
+  #part5,
+  #part6 {
     position: absolute;
-    right: 50%;
-    bottom: -20%;
-    font-size: 6vw;
+    height: 20%;
   }
+
+  #part1 {
+    right: 30%;
+    top: 22%;
+  }
+  #part2 {
+    right: 36%;
+    top: 42%;
+  }
+  #part3 {
+    right: 36%;
+    top: 42%;
+  }
+  #part4 {
+    right: 26%;
+    top: 42%;
+  }
+  #part5 {
+    right: 36%;
+    top: 61%;
+  }
+  #part6 {
+    right: 26%;
+    top: 61%;
+  }
+}
+
+#counter-span {
+  position: absolute;
+  right: 50%;
+  bottom: -20%;
+  font-size: 6vw;
 }
 
 #answer-div {
@@ -117,20 +120,21 @@ main > div {
   flex-flow: row wrap;
   justify-content: center;
   gap: 0.15rem;
-  .key {
-    aspect-ratio: 1 / 1;
-    height: 9.1vw;
-    overflow: hidden;
-    border-radius: 0.5rem;
-    border: none;
-    box-shadow: 1px 1px 4px black;
-    font-size: 4.3vw;
-    cursor: pointer;
-    text-align: center;
-    -webkit-tap-highlight-color: transparent;
-    &:active {
-      box-shadow: 1px 1px 2px;
-    }
+}
+
+.key {
+  aspect-ratio: 1 / 1;
+  height: 9.1vw;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 1px 1px 4px black;
+  font-size: 4.3vw;
+  cursor: pointer;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  &:active {
+    box-shadow: 1px 1px 2px;
   }
 }
 
@@ -148,35 +152,40 @@ main > div {
   background-color: white;
   border: 4px solid rgb(95, 95, 95);
   border-radius: 20px;
-  #modal-content {
-    padding: 0.6rem;
-    text-align: center;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    p {
-      margin-bottom: 1.25rem;
-      word-wrap: break-word;
-      font-size: 1.2rem;
-    }
-    #restart-button {
-      font-size: 1.2rem;
-    }
+}
+
+#modal-content {
+  padding: 0.6rem;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  p {
+    margin-bottom: 1.25rem;
+    word-wrap: break-word;
+    font-size: 1.2rem;
   }
-  #restart-button {
-    cursor: pointer;
-    background-color: inherit;
-    border: 1px solid black;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    &:hover {
-      background-color: #272727;
-      color: white;
-    }
-    &:active {
-      background-color: initial;
-      color: initial;
-    }
+}
+
+#restart-button {
+  font-size: 1.2rem;
+}
+
+#restart-button {
+  cursor: pointer;
+  background-color: inherit;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: #272727;
+    color: white;
+  }
+
+  &:active {
+    background-color: initial;
+    color: initial;
   }
 }
 
