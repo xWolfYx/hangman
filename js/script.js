@@ -1,25 +1,27 @@
 const body = document.body;
 
-// main element
-const main = document.createElement("main");
-main.id = "main";
-body.appendChild(main);
+let incorrectGuessCount = 0;
 
-// gallows div
-const containerDiv = document.createElement("div");
-containerDiv.id = "container-div";
-main.appendChild(containerDiv);
-
-// gallows div
-const gallowsDiv = document.createElement("div");
-gallowsDiv.id = "gallows-div";
-containerDiv.appendChild(gallowsDiv);
-
-// gallows and other images
-const gallows = document.createElement("img");
-gallows.id = "gallows";
-gallows.src = "../img/gallows.png";
-gallowsDiv.appendChild(gallows);
+body.innerHTML = `
+<main id="main">
+  <div id="container-div">
+    <div id="gallows-div">
+      <img id="gallows" src="../img/gallows.png">
+      <span id="counter-span">${incorrectGuessCount}</span>
+    </div>
+  </div>
+  <div id="question-div">
+    <p id="question"></p>
+  </div>
+  <div id="modal" style="display: none">
+    <div id="modal-content">
+    <p></p>
+    <button id="restart-button"></button>
+    </div>
+  </div>
+</main>
+<div id="overlay" style="display: none"></div>
+`;
 
 const hangmanParts = [
   "",
@@ -31,42 +33,18 @@ const hangmanParts = [
   "../img/6-leg-two.png",
 ];
 
-// counter for incorrect guesses
-const counterSpan = document.createElement("span");
-counterSpan.id = "counter-span";
-gallowsDiv.appendChild(counterSpan);
-let incorrectGuessCount = 0;
-counterSpan.innerText = incorrectGuessCount;
-
-// question
-const questionDiv = document.createElement("div");
-questionDiv.id = "question-div";
-main.appendChild(questionDiv);
-const question = document.createElement("p");
-question.id = "question";
-questionDiv.appendChild(question);
-
-// modal
-const modal = document.createElement("div");
-modal.id = "modal";
-modal.style.display = "none";
-main.appendChild(modal);
-
-// modal content
-const modalContent = document.createElement("div");
-modalContent.id = "modal-content";
-modal.appendChild(modalContent);
-
-// restart button
-const restartButton = document.createElement("button");
-restartButton.id = "restart-button";
+const modal = document.getElementById("modal");
+const overlay = document.getElementById("overlay");
+const gallowsDiv = document.getElementById("gallows-div");
+const counterSpan = document.getElementById("counter-span");
+const restartButton = document.getElementById("restart-button");
 restartButton.addEventListener("click", restartGame);
-modalContent.appendChild(restartButton);
 
 // function to show the modal
 function showModal(message) {
-  modalContent.innerHTML = `<p>${message}</p>`;
-  modalContent.appendChild(restartButton);
+  const modalContent = document.getElementById("modal-content");
+
+  modalContent.querySelector("p").innerText = message;
   modal.style.display = "flex";
   overlay.style.display = "block";
 }
@@ -74,17 +52,16 @@ function showModal(message) {
 function restartGame() {
   // reset the counter
   incorrectGuessCount = 0;
-  counterSpan.innerText = incorrectGuessCount;
 
   // close the modal
   modal.style.display = "none";
   overlay.style.display = "none";
 
   // remove hangman images
-  const hangmanPartsToDelete = document.querySelectorAll(
-    "#gallows-div img:not(#gallows)"
-  );
-  hangmanPartsToDelete.forEach((img) => img.remove());
+  gallowsDiv.innerHTML = `
+  <img id="gallows" src="../img/gallows.png">`;
+  gallowsDiv.appendChild(counterSpan);
+  counterSpan.innerText = incorrectGuessCount;
 
   // reset the answer
   const answerDiv = document.getElementById("answer-div");
@@ -101,10 +78,6 @@ function restartGame() {
   fetchNewQuestion();
 }
 
-const overlay = document.createElement("div");
-overlay.id = "overlay";
-body.appendChild(overlay);
-
 function fetchNewQuestion() {
   fetch("../js/words.json")
     .then((response) => {
@@ -114,6 +87,7 @@ function fetchNewQuestion() {
       return response.json();
     })
     .then((data) => {
+      const main = document.getElementById("main");
       const questions = data.questions;
       const randomIndex = Math.floor(Math.random() * questions.length);
       const randomQuestion = questions[randomIndex];
