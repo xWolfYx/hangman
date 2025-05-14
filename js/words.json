@@ -5,368 +5,392 @@
       "hint": "Erupts with molten rock"
     },
     {
-      "word": "comet",
-      "hint": "A ball of ice and dust"
+      "word": "giraffe",
+      "hint": "Tallest land animal with a long neck"
     },
     {
-      "word": "chimney",
-      "hint": "Smoke goes through this"
+      "word": "compass",
+      "hint": "Navigational tool pointing north"
     },
     {
-      "word": "pirate",
-      "hint": "Seafaring treasure hunter"
+      "word": "tornado",
+      "hint": "Violent spinning storm"
     },
     {
       "word": "glacier",
-      "hint": "Mass of slow-moving ice"
+      "hint": "Slow-moving mass of ice"
     },
     {
-      "word": "crater",
-      "hint": "A hole formed by impact"
+      "word": "penguin",
+      "hint": "Flightless bird of the Antarctic"
     },
     {
-      "word": "sailboat",
-      "hint": "Wind-powered watercraft"
+      "word": "pyramid",
+      "hint": "Ancient Egyptian tomb structure"
     },
     {
-      "word": "treasure",
-      "hint": "Valuable items, often buried"
+      "word": "saxophone",
+      "hint": "Jazz instrument with a curved shape"
     },
     {
-      "word": "magnet",
-      "hint": "Attracts metal objects"
+      "word": "monarch",
+      "hint": "Type of butterfly or a king"
     },
     {
-      "word": "sculpture",
-      "hint": "Art carved from materials"
+      "word": "cathedral",
+      "hint": "Large, ornate church"
     },
     {
-      "word": "circus",
-      "hint": "Big top with performers"
+      "word": "lantern",
+      "hint": "Portable light source"
     },
     {
-      "word": "desert",
-      "hint": "Dry, sandy landscape"
+      "word": "dolphin",
+      "hint": "Intelligent marine mammal"
     },
     {
-      "word": "astronaut",
-      "hint": "Person who travels to space"
+      "word": "bicycle",
+      "hint": "Two-wheeled pedal vehicle"
     },
     {
-      "word": "crystal",
-      "hint": "Solid structure with geometric shape"
+      "word": "telescope",
+      "hint": "Tool for viewing distant stars"
     },
     {
-      "word": "whale",
-      "hint": "Largest ocean mammal"
+      "word": "cactus",
+      "hint": "Spiky desert plant"
+    },
+    {
+      "word": "eclipse",
+      "hint": "When the moon blocks the sun"
+    },
+    {
+      "word": "kangaroo",
+      "hint": "Australian marsupial that hops"
+    },
+    {
+      "word": "umbrella",
+      "hint": "Protects from rain"
+    },
+    {
+      "word": "skeleton",
+      "hint": "Framework of bones"
+    },
+    {
+      "word": "microscope",
+      "hint": "Magnifies tiny objects"
+    },
+    {
+      "word": "rattlesnake",
+      "hint": "Venomous snake with a noisy tail"
+    },
+    {
+      "word": "lighthouse",
+      "hint": "Guides ships with a beacon"
+    },
+    {
+      "word": "accordion",
+      "hint": "Bellows-driven musical instrument"
+    },
+    {
+      "word": "elephant",
+      "hint": "Largest land animal with a trunk"
+    },
+    {
+      "word": "hurricane",
+      "hint": "Powerful tropical storm"
     },
     {
       "word": "parachute",
       "hint": "Slows descent from the sky"
     },
     {
-      "word": "bamboo",
-      "hint": "Tall, fast-growing grass"
+      "word": "crocodile",
+      "hint": "Large reptile with powerful jaws"
     },
     {
-      "word": "helicopter",
-      "hint": "Flying vehicle with rotating blades"
+      "word": "windmill",
+      "hint": "Uses blades to harness wind"
     },
     {
-      "word": "flamingo",
-      "hint": "Pink bird with long legs"
+      "word": "xylophone",
+      "hint": "Percussion instrument with wooden bars"
     },
     {
-      "word": "zeppelin",
-      "hint": "Large airship, often used in the past"
-    },
-    {
-      "word": "kangaroo",
-      "hint": "Hops around"
-    },
-    {
-      "word": "dolphin",
-      "hint": "Smart, playful ocean mammal"
-    },
-    {
-      "word": "telescope",
-      "hint": "For gazing far away"
-    },
-    {
-      "word": "computer",
-      "hint": "Digital brain"
-    },
-    {
-      "word": "rocket",
-      "hint": "Shoots into the sky"
-    },
-    {
-      "word": "robot",
-      "hint": "Mechanical helper"
-    },
-    {
-      "word": "zebra",
-      "hint": "Striped wild animal"
-    },
-    {
-      "word": "lighthouse",
-      "hint": "Shining in the dark"
-    },
-    {
-      "word": "mirror",
-      "hint": "Reflects your image"
-    },
-    {
-      "word": "parrot",
-      "hint": "Colorful bird that can mimic speech"
-    },
-    {
-      "word": "rainbow",
-      "hint": "Colors after rain"
-    },
-    {
-      "word": "whale",
-      "hint": "Ocean giant"
-    },
-    {
-      "word": "tornado",
-      "hint": "Spinning windstorm"
-    },
-    {
-      "word": "mountain",
-      "hint": "A big lump of Earth"
-    },
-    {
-      "word": "bicycle",
-      "hint": "Pedal-powered vehicle"
-    },
-    {
-      "word": "hurricane",
-      "hint": "A massive storm"
-    },
-    {
-      "word": "paradise",
-      "hint": "A perfect, beautiful place"
-    },
-    {
-      "word": "volcano",
-      "hint": "Molten rock explosion"
-    },
-    {
-      "word": "pizza",
-      "hint": "Cheese and toppings on dough"
-    },
-    {
-      "word": "hologram",
-      "hint": "3D projection made of light"
-    },
-    {
-      "word": "guitar",
-      "hint": "Stringed music maker"
-    },
-    {
-      "word": "astronomy",
-      "hint": "The study of stars and planets"
-    },
-    {
-      "word": "library",
-      "hint": "A place with many books"
-    },
-    {
-      "word": "universe",
-      "hint": "All of everything"
-    },
-    {
-      "word": "scuba",
-      "hint": "Underwater diving equipment"
-    },
-    {
-      "word": "oxygen",
-      "hint": "What we breathe"
-    },
-    {
-      "word": "cactus",
-      "hint": "Spiny desert plant"
-    },
-    {
-      "word": "jungle",
-      "hint": "Tropical forest"
-    },
-    {
-      "word": "planet",
-      "hint": "A space ball"
-    },
-    {
-      "word": "giraffe",
-      "hint": "A tall neck animal"
-    },
-    {
-      "word": "sudoku",
-      "hint": "A number puzzle"
-    },
-    {
-      "word": "sapphire",
-      "hint": "Blue precious stone"
-    },
-    {
-      "word": "zodiac",
-      "hint": "Astrological symbols"
-    },
-    {
-      "word": "aviator",
-      "hint": "Airplane pilot"
-    },
-    {
-      "word": "waterfall",
-      "hint": "Cascading water from a height"
-    },
-    {
-      "word": "shark",
-      "hint": "Large predatory fish"
-    },
-    {
-      "word": "igloo",
-      "hint": "Ice house"
-    },
-    {
-      "word": "orchestra",
-      "hint": "Group of musicians"
-    },
-    {
-      "word": "flute",
-      "hint": "Woodwind musical instrument"
-    },
-    {
-      "word": "pyramid",
-      "hint": "A pointy ancient structure"
-    },
-    {
-      "word": "submarine",
-      "hint": "Underwater vehicle"
-    },
-    {
-      "word": "koala",
-      "hint": "Tree-climbing marsupial"
-    },
-    {
-      "word": "sunflower",
-      "hint": "Yellow blooming flower"
-    },
-    {
-      "word": "chocolate",
-      "hint": "Sweet treat made from cocoa"
-    },
-    {
-      "word": "coral",
-      "hint": "Marine reef-building organism"
+      "word": "fireworks",
+      "hint": "Explosive displays in the sky"
     },
     {
       "word": "scorpion",
-      "hint": "Arachnid with a stinger"
+      "hint": "Arachnid with a stinging tail"
     },
     {
-      "word": "caterpillar",
-      "hint": "Larvae of butterflies"
-    },
-    {
-      "word": "statue",
-      "hint": "Sculpted figure"
-    },
-    {
-      "word": "sunshine",
-      "hint": "Bright sunlight"
-    },
-    {
-      "word": "lighthouse",
-      "hint": "Guides ships through the night"
-    },
-    {
-      "word": "squirrel",
-      "hint": "Tree-dwelling rodent"
-    },
-    {
-      "word": "beehive",
-      "hint": "Home of bees"
-    },
-    {
-      "word": "honey",
-      "hint": "Sweet food made by bees"
-    },
-    {
-      "word": "glove",
-      "hint": "Worn on the hand"
-    },
-    {
-      "word": "cloud",
-      "hint": "Fluffy vapor in the sky"
-    },
-    {
-      "word": "safari",
-      "hint": "African animal watching trip"
-    },
-    {
-      "word": "octopus",
-      "hint": "Eight-legged ocean creature"
-    },
-    {
-      "word": "scooter",
-      "hint": "Small vehicle with two wheels"
-    },
-    {
-      "word": "fireplace",
-      "hint": "Place for a fire inside"
-    },
-    {
-      "word": "astronaut",
-      "hint": "Space explorer"
-    },
-    {
-      "word": "beach",
-      "hint": "Sandy shore by the sea"
+      "word": "submarine",
+      "hint": "Vessel that travels underwater"
     },
     {
       "word": "jellyfish",
-      "hint": "Gelatinous sea creature"
+      "hint": "Gelatinous sea creature with tentacles"
     },
     {
-      "word": "acorn",
-      "hint": "Nut from an oak tree"
+      "word": "binoculars",
+      "hint": "Tool for seeing far distances"
     },
     {
-      "word": "panda",
-      "hint": "Black and white bear"
+      "word": "cheetah",
+      "hint": "Fastest land animal"
     },
     {
-      "word": "snowman",
-      "hint": "Carved from snow"
-    },
-    {
-      "word": "clownfish",
-      "hint": "Brightly colored reef fish"
-    },
-    {
-      "word": "mushroom",
-      "hint": "Fungi with a cap"
-    },
-    {
-      "word": "daisy",
-      "hint": "White petaled flower"
+      "word": "calendar",
+      "hint": "Tracks days and months"
     },
     {
       "word": "igloo",
-      "hint": "A house made of ice"
+      "hint": "Domed snow house"
     },
     {
-      "word": "pineapple",
-      "hint": "Tropical fruit with spiky skin"
+      "word": "waterfall",
+      "hint": "Cascading stream over a cliff"
     },
     {
-      "word": "dinosaur",
-      "hint": "Extinct giant reptiles"
+      "word": "magnet",
+      "hint": "Attracts metal objects"
     },
     {
-      "word": "sunset",
-      "hint": "End of the day's light"
+      "word": "octopus",
+      "hint": "Sea creature with eight arms"
+    },
+    {
+      "word": "stethoscope",
+      "hint": "Doctor’s tool for hearing heartbeats"
+    },
+    {
+      "word": "chameleon",
+      "hint": "Lizard that changes color"
+    },
+    {
+      "word": "carousel",
+      "hint": "Spinning amusement ride"
+    },
+    {
+      "word": "companion",
+      "hint": "A close friend or partner"
+    },
+    {
+      "word": "flashlight",
+      "hint": "Handheld light source"
+    },
+    {
+      "word": "rhinoceros",
+      "hint": "Large animal with a horn"
+    },
+    {
+      "word": "helicopter",
+      "hint": "Aircraft with rotating blades"
+    },
+    {
+      "word": "barometer",
+      "hint": "Measures atmospheric pressure"
+    },
+    {
+      "word": "porcupine",
+      "hint": "Animal with sharp quills"
+    },
+    {
+      "word": "fossil",
+      "hint": "Preserved remains of ancient life"
+    },
+    {
+      "word": "trampoline",
+      "hint": "Bouncy surface for jumping"
+    },
+    {
+      "word": "butterfly",
+      "hint": "Insect with colorful wings"
+    },
+    {
+      "word": "avalanche",
+      "hint": "Rapid snow slide down a mountain"
+    },
+    {
+      "word": "typewriter",
+      "hint": "Old-fashioned writing machine"
+    },
+    {
+      "word": "harmonica",
+      "hint": "Small wind instrument played by mouth"
+    },
+    {
+      "word": "treasure",
+      "hint": "Hidden valuable items"
+    },
+    {
+      "word": "skyscraper",
+      "hint": "Very tall building"
+    },
+    {
+      "word": "cannon",
+      "hint": "Large weapon that fires heavy balls"
+    },
+    {
+      "word": "peacock",
+      "hint": "Bird with a vibrant tail"
+    },
+    {
+      "word": "thermostat",
+      "hint": "Controls room temperature"
+    },
+    {
+      "word": "meteor",
+      "hint": "Space rock that enters Earth’s atmosphere"
+    },
+    {
+      "word": "banjo",
+      "hint": "Stringed instrument with a round body"
+    },
+    {
+      "word": "orchid",
+      "hint": "Exotic flowering plant"
+    },
+    {
+      "word": "gondola",
+      "hint": "Venetian canal boat"
+    },
+    {
+      "word": "anemone",
+      "hint": "Colorful sea creature or flower"
+    },
+    {
+      "word": "glider",
+      "hint": "Unpowered aircraft"
+    },
+    {
+      "word": "tambourine",
+      "hint": "Percussion instrument with jingles"
+    },
+    {
+      "word": "sundial",
+      "hint": "Tells time using shadows"
+    },
+    {
+      "word": "coral",
+      "hint": "Marine structure built by tiny animals"
+    },
+    {
+      "word": "zipper",
+      "hint": "Fastener with interlocking teeth"
+    },
+    {
+      "word": "vulture",
+      "hint": "Scavenging bird of prey"
+    },
+    {
+      "word": "aquarium",
+      "hint": "Tank for keeping fish"
+    },
+    {
+      "word": "hammock",
+      "hint": "Swinging bed for relaxing"
+    },
+    {
+      "word": "beacon",
+      "hint": "Signal light for guidance"
+    },
+    {
+      "word": "crater",
+      "hint": "Bowl-shaped depression from impact"
+    },
+    {
+      "word": "fountain",
+      "hint": "Decorative water feature"
+    },
+    {
+      "word": "gargoyle",
+      "hint": "Grotesque statue on buildings"
+    },
+    {
+      "word": "radiator",
+      "hint": "Heats a room"
+    },
+    {
+      "word": "quicksand",
+      "hint": "Loose sand that traps objects"
+    },
+    {
+      "word": "tangerine",
+      "hint": "Small, sweet citrus fruit"
+    },
+    {
+      "word": "cavern",
+      "hint": "Large underground chamber"
+    },
+    {
+      "word": "pendulum",
+      "hint": "Swinging weight in a clock"
+    },
+    {
+      "word": "vineyard",
+      "hint": "Place where grapes are grown"
+    },
+    {
+      "word": "seahorse",
+      "hint": "Tiny fish with a curled tail"
+    },
+    {
+      "word": "pagoda",
+      "hint": "Tiered Asian temple"
+    },
+    {
+      "word": "bamboo",
+      "hint": "Fast-growing woody grass"
+    },
+    {
+      "word": "monument",
+      "hint": "Structure honoring an event or person"
+    },
+    {
+      "word": "clarinet",
+      "hint": "Woodwind instrument with a single reed"
+    },
+    {
+      "word": "armadillo",
+      "hint": "Animal with bony plates"
+    },
+    {
+      "word": "pothole",
+      "hint": "Depression in the road"
+    },
+    {
+      "word": "sunflower",
+      "hint": "Tall plant with a large yellow bloom"
+    },
+    {
+      "word": "abacus",
+      "hint": "Ancient counting tool with beads"
+    },
+    {
+      "word": "marathon",
+      "hint": "Long-distance running race"
+    },
+    {
+      "word": "tapir",
+      "hint": "Animal with a short trunk"
+    },
+    {
+      "word": "yogurt",
+      "hint": "Fermented dairy product"
+    },
+    {
+      "word": "obelisk",
+      "hint": "Tall, four-sided stone pillar"
+    },
+    {
+      "word": "nectar",
+      "hint": "Sweet liquid from flowers"
+    },
+    {
+      "word": "kiosk",
+      "hint": "Small stand for selling goods"
     }
   ]
 }
