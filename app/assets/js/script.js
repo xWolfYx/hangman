@@ -40,7 +40,6 @@ const counterSpan = document.getElementById("counter-span");
 const restartButton = document.getElementById("restart-button");
 restartButton.addEventListener("click", restartGame);
 
-// function to show the modal
 function showModal(message) {
   const modalContent = document.getElementById("modal-content");
 
@@ -50,26 +49,21 @@ function showModal(message) {
 }
 
 function restartGame() {
-  // reset the counter
   incorrectGuessCount = 0;
 
-  // close the modal
   modal.style.display = "none";
   overlay.style.display = "none";
 
-  // remove hangman images
   gallowsDiv.innerHTML = `
   <img id="gallows" src="./assets/images/gallows.png">`;
   gallowsDiv.append(counterSpan);
   counterSpan.innerText = incorrectGuessCount;
 
-  // reset the answer
   const answerDiv = document.getElementById("answer-div");
   if (answerDiv) {
     answerDiv.remove();
   }
 
-  // remove keyboard
   const keyboardDiv = document.getElementById("keyboard");
   if (keyboardDiv) {
     keyboardDiv.remove();
@@ -93,12 +87,10 @@ function fetchNewQuestion() {
       const randomQuestion = questions[randomIndex];
       document.getElementById("question").innerText = randomQuestion.hint;
 
-      // answer
       const answerDiv = document.createElement("div");
       answerDiv.id = "answer-div";
       main.append(answerDiv);
 
-      // creating hidden letters
       const word = randomQuestion.word.toUpperCase();
       console.log(`
 ---------------------------------
@@ -114,13 +106,11 @@ function fetchNewQuestion() {
         letterSpans.push(letters);
       });
 
-      // keyboard
       const keyboardLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
       const keyboardDiv = document.createElement("div");
       keyboardDiv.id = "keyboard";
       main.append(keyboardDiv);
       keyboardLetters.forEach((letter) => {
-        // keyboard keys
         const button = document.createElement("button");
         button.textContent = letter;
         button.className = "key";
@@ -130,7 +120,6 @@ function fetchNewQuestion() {
           keyboardSound.play();
           button.disabled = true;
 
-          // check for the letter
           let correct = false;
           Array.from(word).forEach((wordLetter, index) => {
             if (wordLetter === letter) {
@@ -142,7 +131,6 @@ function fetchNewQuestion() {
             incorrectGuessCount += 1;
             counterSpan.innerText = incorrectGuessCount;
 
-            // adding hangman images
             const hangmanImage = document.createElement("img");
             hangmanImage.src = hangmanParts[incorrectGuessCount];
             hangmanImage.id = "part" + incorrectGuessCount;
