@@ -43,7 +43,7 @@ restartButton.addEventListener("click", restartGame);
 function showModal(message) {
   const modalContent = document.getElementById("modal-content");
 
-  modalContent.querySelector("p").innerText = message;
+  modalContent.querySelector("p").textContent = message;
   modal.style.display = "flex";
   overlay.style.display = "block";
 }
@@ -57,7 +57,7 @@ function restartGame() {
   gallowsDiv.innerHTML = `
   <img id="gallows" src="./assets/images/gallows.png">`;
   gallowsDiv.append(counterSpan);
-  counterSpan.innerText = incorrectGuessCount;
+  counterSpan.textContent = incorrectGuessCount;
 
   const answerDiv = document.getElementById("answer-div");
   if (answerDiv) {
@@ -85,7 +85,7 @@ function fetchNewQuestion() {
       const questions = data.questions;
       const randomIndex = Math.floor(Math.random() * questions.length);
       const randomQuestion = questions[randomIndex];
-      document.getElementById("question").innerText = randomQuestion.hint;
+      document.getElementById("question").textContent = randomQuestion.hint;
 
       const answerDiv = document.createElement("div");
       answerDiv.id = "answer-div";
@@ -129,7 +129,7 @@ function fetchNewQuestion() {
           });
           if (!correct) {
             incorrectGuessCount += 1;
-            counterSpan.innerText = incorrectGuessCount;
+            counterSpan.textContent = incorrectGuessCount;
 
             const hangmanImage = document.createElement("img");
             hangmanImage.src = hangmanParts[incorrectGuessCount];
