@@ -5,4 +5,4 @@ Idea and assets are of their creation. \
 I built from their inspiration. \
 [Original deployment](https://rolling-scopes-school.github.io/xwolfyx-JSFEEN2024Q4/hangman/html/)
 
-**[Current deployment](https://xwolfyx.github.io/hangman/html/)**
+**[Current deployment](https://xwolfyx.github.io/hangman/app/)**
