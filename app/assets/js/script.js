@@ -6,7 +6,7 @@ body.innerHTML = `
 <main id="main">
   <div id="container-div">
     <div id="gallows-div">
-      <img id="gallows" src="../img/gallows.png">
+      <img id="gallows" src="./assets/images/gallows.png">
       <span id="counter-span">${incorrectGuessCount}</span>
     </div>
   </div>
@@ -25,12 +25,12 @@ body.innerHTML = `
 
 const hangmanParts = [
   "",
-  "../img/1-head.png",
-  "../img/2-body.png",
-  "../img/3-hand-one.png",
-  "../img/4-hand-two.png",
-  "../img/5-leg-one.png",
-  "../img/6-leg-two.png",
+  "./assets/images/1-head.png",
+  "./assets/images/2-body.png",
+  "./assets/images/3-hand-one.png",
+  "./assets/images/4-hand-two.png",
+  "./assets/images/5-leg-one.png",
+  "./assets/images/6-leg-two.png",
 ];
 
 const modal = document.getElementById("modal");
@@ -59,7 +59,7 @@ function restartGame() {
 
   // remove hangman images
   gallowsDiv.innerHTML = `
-  <img id="gallows" src="../img/gallows.png">`;
+  <img id="gallows" src="./assets/images/gallows.png">`;
   gallowsDiv.appendChild(counterSpan);
   counterSpan.innerText = incorrectGuessCount;
 
@@ -79,7 +79,7 @@ function restartGame() {
 }
 
 function fetchNewQuestion() {
-  fetch("../js/words.json")
+  fetch("/app/assets/js/words.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Failed to fetch: " + response.statusText);
@@ -102,6 +102,7 @@ function fetchNewQuestion() {
       const word = randomQuestion.word.toUpperCase();
       console.log(`
 ---------------------------------
+     For Debugging:
      Answer =====> ${word}
 ---------------------------------
 `);
@@ -124,7 +125,7 @@ function fetchNewQuestion() {
         button.textContent = letter;
         button.className = "key";
         button.addEventListener("click", () => {
-          const keyboardSound = new Audio("../keyboard-sound.wav");
+          const keyboardSound = new Audio("./assets/sounds/keyboard-sound.wav");
           keyboardSound.currentTime = 0;
           keyboardSound.play();
           button.disabled = true;

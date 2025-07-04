@@ -1,22 +1,22 @@
 @font-face {
   font-family: "Comic Sans";
-  src: url(../font_comic_sans_ms/comic.ttf);
+  src: url(../../assets/fonts/comic.ttf);
 }
 @font-face {
   font-family: "Comic Sans";
   font-weight: bold;
-  src: url(../font_comic_sans_ms/comicbd.ttf);
+  src: url(../../assets/fonts/comicbd.ttf);
 }
 @font-face {
   font-family: "Comic Sans";
   font-style: italic;
-  src: url(../font_comic_sans_ms/comici.ttf);
+  src: url(../../assets/fonts/comici.ttf);
 }
 @font-face {
   font-family: "Comic Sans";
   font-weight: bold;
   font-style: italic;
-  src: url(../font_comic_sans_ms/comicz.ttf);
+  src: url(../../assets/fonts/comicz.ttf);
 }
 * {
   box-sizing: border-box;
