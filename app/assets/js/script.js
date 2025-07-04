@@ -60,7 +60,7 @@ function restartGame() {
   // remove hangman images
   gallowsDiv.innerHTML = `
   <img id="gallows" src="./assets/images/gallows.png">`;
-  gallowsDiv.appendChild(counterSpan);
+  gallowsDiv.append(counterSpan);
   counterSpan.innerText = incorrectGuessCount;
 
   // reset the answer
@@ -96,7 +96,7 @@ function fetchNewQuestion() {
       // answer
       const answerDiv = document.createElement("div");
       answerDiv.id = "answer-div";
-      main.appendChild(answerDiv);
+      main.append(answerDiv);
 
       // creating hidden letters
       const word = randomQuestion.word.toUpperCase();
@@ -110,7 +110,7 @@ function fetchNewQuestion() {
       Array.from(word).forEach(() => {
         const letters = document.createElement("span");
         letters.textContent = "_";
-        answerDiv.appendChild(letters);
+        answerDiv.append(letters);
         letterSpans.push(letters);
       });
 
@@ -118,7 +118,7 @@ function fetchNewQuestion() {
       const keyboardLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
       const keyboardDiv = document.createElement("div");
       keyboardDiv.id = "keyboard";
-      main.appendChild(keyboardDiv);
+      main.append(keyboardDiv);
       keyboardLetters.forEach((letter) => {
         // keyboard keys
         const button = document.createElement("button");
@@ -147,7 +147,7 @@ function fetchNewQuestion() {
             hangmanImage.src = hangmanParts[incorrectGuessCount];
             hangmanImage.id = "part" + incorrectGuessCount;
             hangmanImage.alt = "Hangman Part";
-            gallowsDiv.appendChild(hangmanImage);
+            gallowsDiv.append(hangmanImage);
           }
           if (letterSpans.every((span) => span.textContent !== "_")) {
             showModal(`Yes! It's ${word}. Congratulations!`);
@@ -158,7 +158,7 @@ function fetchNewQuestion() {
             restartButton.textContent = "Try Again";
           }
         });
-        keyboardDiv.appendChild(button);
+        keyboardDiv.append(button);
       });
     });
 }
