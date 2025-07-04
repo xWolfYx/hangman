@@ -79,7 +79,7 @@ function restartGame() {
 }
 
 function fetchNewQuestion() {
-  fetch("/app/assets/js/words.json")
+  fetch("./assets/js/words.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Failed to fetch: " + response.statusText);
