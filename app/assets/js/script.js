@@ -82,7 +82,7 @@ async function fetchNewQuestion() {
     const questions = words.questions;
     const randomIndex = Math.floor(Math.random() * questions.length);
     const randomQuestion = questions[randomIndex];
-    document.getElementById("question").textContent = randomQuestion.hint;
+    showHint(randomQuestion.hint);
 
     const answerDiv = document.createElement("div");
     answerDiv.id = "answer-div";
@@ -103,23 +103,24 @@ async function fetchNewQuestion() {
       letterSpans.push(letters);
     });
 
-    const keyboardLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+    const keyboardKeys = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
     const keyboardDiv = document.createElement("div");
     keyboardDiv.id = "keyboard";
     main.append(keyboardDiv);
-    keyboardLetters.forEach((letter) => {
+    keyboardKeys.forEach((key) => {
       const button = document.createElement("button");
-      button.textContent = letter;
+      button.textContent = key;
       button.className = "key";
       button.addEventListener("click", () => {
         playSound(button);
         let correct = false;
         Array.from(word).forEach((wordLetter, index) => {
-          if (wordLetter === letter) {
-            letterSpans[index].textContent = letter;
+          if (wordLetter === key) {
+            letterSpans[index].textContent = key;
             correct = true;
           }
         });
+
         if (!correct) {
           incorrectGuessCount += 1;
           counterSpan.textContent = incorrectGuessCount;
@@ -130,6 +131,7 @@ async function fetchNewQuestion() {
           hangmanImage.alt = "Hangman Part";
           gallowsDiv.append(hangmanImage);
         }
+
         if (letterSpans.every((span) => span.textContent !== "_")) {
           showModal(`Yes! It's ${word}. Congratulations!`);
           restartButton.textContent = "Next Round";
@@ -152,4 +154,9 @@ function playSound(button) {
   keyboardSound.currentTime = 0;
   keyboardSound.play();
   button.disabled = true;
+}
+
+function showHint(hint) {
+  const questionEl = document.getElementById("question");
+  questionEl.textContent = hint;
 }
