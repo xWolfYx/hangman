@@ -84,10 +84,7 @@ async function fetchNewQuestion() {
     const randomQuestion = questions[randomIndex];
     showHint(randomQuestion.hint);
 
-    const answerDiv = document.createElement("div");
-    answerDiv.id = "answer-div";
-    main.append(answerDiv);
-
+    appendAnswer(main);
     const word = randomQuestion.word.toUpperCase();
     console.log(`
 ---------------------------------
@@ -99,6 +96,7 @@ async function fetchNewQuestion() {
     Array.from(word).forEach(() => {
       const letters = document.createElement("span");
       letters.textContent = "_";
+      const answerDiv = document.querySelector(".answer-div");
       answerDiv.append(letters);
       letterSpans.push(letters);
     });
@@ -159,4 +157,10 @@ function playSound(button) {
 function showHint(hint) {
   const questionEl = document.getElementById("question");
   questionEl.textContent = hint;
+}
+
+function appendAnswer(parent) {
+  const answerDiv = document.createElement("div");
+  answerDiv.classList.add("answer-div");
+  parent.append(answerDiv);
 }
