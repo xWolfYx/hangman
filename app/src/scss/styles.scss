@@ -24,15 +24,15 @@ main > div {
   max-width: 1440px;
 }
 
-#question-div {
+.question-div {
   text-align: center;
 }
 
-#question {
+.question {
   font-size: 5vw;
 }
 
-#container-div {
+.container-div {
   position: relative;
   aspect-ratio: 1 / 0.8;
   margin-top: 10px;
@@ -40,61 +40,61 @@ main > div {
   padding: 1rem;
 }
 
-#gallows {
+.gallows {
   height: 100%;
 }
 
-#gallows-div {
+.gallows-div {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   height: 80%;
 
-  #part1,
-  #part2,
-  #part3,
-  #part4,
-  #part5,
-  #part6 {
+  .part1,
+  .part2,
+  .part3,
+  .part4,
+  .part5,
+  .part6 {
     position: absolute;
     height: 20%;
   }
 
-  #part1 {
+  .part1 {
     right: 30%;
     top: 22%;
   }
-  #part2 {
+  .part2 {
     right: 36%;
     top: 42%;
   }
-  #part3 {
+  .part3 {
     right: 36%;
     top: 42%;
   }
-  #part4 {
+  .part4 {
     right: 26%;
     top: 42%;
   }
-  #part5 {
+  .part5 {
     right: 36%;
     top: 61%;
   }
-  #part6 {
+  .part6 {
     right: 26%;
     top: 61%;
   }
 }
 
-#counter-span {
+.counter-span {
   position: absolute;
   right: 50%;
   bottom: -20%;
   font-size: 6vw;
 }
 
-#answer-div {
+.answer-div {
   display: flex;
   flex-flow: row wrap;
   gap: 12px;
@@ -111,7 +111,7 @@ main > div {
   }
 }
 
-#keyboard {
+.keyboard {
   position: fixed;
   bottom: 1.25rem;
   min-width: 300px;
@@ -138,7 +138,7 @@ main > div {
   }
 }
 
-#modal {
+.modal {
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -154,7 +154,7 @@ main > div {
   border-radius: 20px;
 }
 
-#modal-content {
+.modal-content {
   padding: 0.6rem;
   text-align: center;
   display: flex;
@@ -167,11 +167,11 @@ main > div {
   }
 }
 
-#restart-button {
+.restart-button {
   font-size: 1.2rem;
 }
 
-#restart-button {
+.restart-button {
   cursor: pointer;
   background-color: inherit;
   border: 1px solid black;
@@ -189,7 +189,7 @@ main > div {
   }
 }
 
-#overlay {
+.overlay {
   z-index: 5;
   position: fixed;
   top: 0;
@@ -202,11 +202,11 @@ main > div {
 
 // For small screens (426px < x)
 @media screen and (min-width: 426px) {
-  #container-div {
+  .container-div {
     max-width: 455px;
   }
 
-  #counter-span {
+  .counter-span {
     font-size: 3vw;
   }
 }
@@ -218,12 +218,12 @@ main > div {
     grid-template-columns: 50%;
     align-content: space-between;
   }
-  #container-div,
-  #question-div {
+  .container-div,
+  .question-div {
     margin-top: 10%;
   }
 
-  #answer-div {
+  .answer-div {
     grid-column: 2 / 3;
 
     span {
@@ -243,25 +243,25 @@ main > div {
     align-items: center;
   }
 
-  #container-div {
+  .container-div {
     grid-row: 1 / 4;
     grid-column: 1 / 2;
     max-width: 100%;
   }
 
-  #gallows-div {
+  .gallows-div {
     left: 10px;
   }
 
-  #question-div {
+  .question-div {
     grid-row: 1 / 2;
   }
 
-  #question {
+  .question {
     font-size: 2rem;
   }
 
-  #answer-div {
+  .answer-div {
     grid-row: 2 / 3;
     span {
       width: 10%;
@@ -270,7 +270,7 @@ main > div {
     }
   }
 
-  #keyboard {
+  .keyboard {
     position: relative;
     grid-row: 3 / 4;
     grid-column: 2 / 3;
@@ -289,11 +289,11 @@ main > div {
     gap: 30px;
   }
 
-  #question {
+  .question {
     font-size: 4vw;
   }
 
-  #answer-div {
+  .answer-div {
     span {
       font-size: 2.5vw;
       height: 4vw;
@@ -313,25 +313,25 @@ main > div {
     align-items: center;
   }
 
-  #container-div {
+  .container-div {
     grid-row: 1 / 4;
     grid-column: 1 / 2;
     max-width: 100%;
   }
 
-  #gallows-div {
+  .gallows-div {
     left: 10px;
   }
 
-  #question-div {
+  .question-div {
     grid-row: 1 / 2;
   }
 
-  #question {
+  .question {
     font-size: 1.25rem;
   }
 
-  #answer-div {
+  .answer-div {
     grid-row: 2 / 3;
     span {
       width: 10%;
@@ -340,7 +340,7 @@ main > div {
     }
   }
 
-  #keyboard {
+  .keyboard {
     position: relative;
     grid-row: 3 / 4;
     grid-column: 2 / 3;

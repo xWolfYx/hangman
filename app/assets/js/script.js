@@ -4,24 +4,24 @@ let incorrectGuessCount = 0;
 const keyboardSound = new Audio("./assets/sounds/keyboard-sound.wav");
 
 body.innerHTML = `
-<main id="main">
-  <div id="container-div">
-    <div id="gallows-div">
-      <img id="gallows" src="./assets/images/gallows.png">
-      <span id="counter-span">${incorrectGuessCount}</span>
+<main class="main">
+  <div class="container-div">
+    <div class="gallows-div">
+      <img class="gallows" src="./assets/images/gallows.png">
+      <span class="counter-span">${incorrectGuessCount}</span>
     </div>
   </div>
-  <div id="question-div">
-    <p id="question"></p>
+  <div class="question-div">
+    <p class="question"></p>
   </div>
-  <div id="modal" style="display: none">
-    <div id="modal-content">
+  <div class="modal" style="display: none">
+    <div class="modal-content">
     <p></p>
-    <button id="restart-button"></button>
+    <button class="restart-button"></button>
     </div>
   </div>
 </main>
-<div id="overlay" style="display: none"></div>
+<div class="overlay" style="display: none"></div>
 `;
 
 const hangmanParts = [
@@ -34,15 +34,15 @@ const hangmanParts = [
   "./assets/images/6-leg-two.png",
 ];
 
-const modal = document.getElementById("modal");
-const overlay = document.getElementById("overlay");
-const gallowsDiv = document.getElementById("gallows-div");
-const counterSpan = document.getElementById("counter-span");
-const restartButton = document.getElementById("restart-button");
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const gallowsDiv = document.querySelector(".gallows-div");
+const counterSpan = document.querySelector(".counter-span");
+const restartButton = document.querySelector(".restart-button");
 restartButton.addEventListener("click", restartGame);
 
 function showModal(message) {
-  const modalContent = document.getElementById("modal-content");
+  const modalContent = document.querySelector(".modal-content");
 
   modalContent.querySelector("p").textContent = message;
   modal.style.display = "flex";
@@ -56,16 +56,16 @@ function restartGame() {
   overlay.style.display = "none";
 
   gallowsDiv.innerHTML = `
-  <img id="gallows" src="./assets/images/gallows.png">`;
+  <img class="gallows" src="./assets/images/gallows.png">`;
   gallowsDiv.append(counterSpan);
   counterSpan.textContent = incorrectGuessCount;
 
-  const answerDiv = document.getElementById("answer-div");
+  const answerDiv = document.querySelector(".answer-div");
   if (answerDiv) {
     answerDiv.remove();
   }
 
-  const keyboardDiv = document.getElementById("keyboard");
+  const keyboardDiv = document.querySelector(".keyboard");
   if (keyboardDiv) {
     keyboardDiv.remove();
   }
@@ -78,7 +78,7 @@ async function fetchNewQuestion() {
     const data = await fetch("./assets/js/words.json");
     const words = await data.json();
 
-    const main = document.getElementById("main");
+    const main = document.querySelector(".main");
     const questions = words.questions;
     const randomIndex = Math.floor(Math.random() * questions.length);
     const randomQuestion = questions[randomIndex];
@@ -103,12 +103,13 @@ async function fetchNewQuestion() {
 
     const keyboardKeys = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
     const keyboardDiv = document.createElement("div");
-    keyboardDiv.id = "keyboard";
+    keyboardDiv.classList.add("keyboard");
     main.append(keyboardDiv);
     keyboardKeys.forEach((key) => {
       const button = document.createElement("button");
       button.textContent = key;
       button.className = "key";
+
       button.addEventListener("click", () => {
         playSound(button);
         let correct = false;
@@ -125,7 +126,7 @@ async function fetchNewQuestion() {
 
           const hangmanImage = document.createElement("img");
           hangmanImage.src = hangmanParts[incorrectGuessCount];
-          hangmanImage.id = "part" + incorrectGuessCount;
+          hangmanImage.classList.add("part" + incorrectGuessCount);
           hangmanImage.alt = "Hangman Part";
           gallowsDiv.append(hangmanImage);
         }
@@ -155,7 +156,7 @@ function playSound(button) {
 }
 
 function showHint(hint) {
-  const questionEl = document.getElementById("question");
+  const questionEl = document.querySelector(".question");
   questionEl.textContent = hint;
 }
 
