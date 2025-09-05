@@ -72,82 +72,81 @@ function restartGame() {
   fetchNewQuestion();
 }
 
-function fetchNewQuestion() {
-  fetch("./assets/js/words.json")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Failed to fetch: " + response.statusText);
-      }
-      return response.json();
-    })
-    .then((data) => {
-      const main = document.getElementById("main");
-      const questions = data.questions;
-      const randomIndex = Math.floor(Math.random() * questions.length);
-      const randomQuestion = questions[randomIndex];
-      document.getElementById("question").textContent = randomQuestion.hint;
+async function fetchNewQuestion() {
+  try {
+    const data = await fetch("./assets/js/words.json");
+    const words = await data.json();
 
-      const answerDiv = document.createElement("div");
-      answerDiv.id = "answer-div";
-      main.append(answerDiv);
+    const main = document.getElementById("main");
+    const questions = words.questions;
+    const randomIndex = Math.floor(Math.random() * questions.length);
+    const randomQuestion = questions[randomIndex];
+    document.getElementById("question").textContent = randomQuestion.hint;
 
-      const word = randomQuestion.word.toUpperCase();
-      console.log(`
+    const answerDiv = document.createElement("div");
+    answerDiv.id = "answer-div";
+    main.append(answerDiv);
+
+    const word = randomQuestion.word.toUpperCase();
+    console.log(`
 ---------------------------------
      For Debugging:
      Answer =====> ${word}
 ---------------------------------
 `);
-      const letterSpans = [];
-      Array.from(word).forEach(() => {
-        const letters = document.createElement("span");
-        letters.textContent = "_";
-        answerDiv.append(letters);
-        letterSpans.push(letters);
-      });
+    const letterSpans = [];
+    Array.from(word).forEach(() => {
+      const letters = document.createElement("span");
+      letters.textContent = "_";
+      answerDiv.append(letters);
+      letterSpans.push(letters);
+    });
 
-      const keyboardLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-      const keyboardDiv = document.createElement("div");
-      keyboardDiv.id = "keyboard";
-      main.append(keyboardDiv);
-      keyboardLetters.forEach((letter) => {
-        const button = document.createElement("button");
-        button.textContent = letter;
-        button.className = "key";
-        button.addEventListener("click", () => {
-          const keyboardSound = new Audio("./assets/sounds/keyboard-sound.wav");
-          keyboardSound.currentTime = 0;
-          keyboardSound.play();
-          button.disabled = true;
+    const keyboardLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+    const keyboardDiv = document.createElement("div");
+    keyboardDiv.id = "keyboard";
+    main.append(keyboardDiv);
+    keyboardLetters.forEach((letter) => {
+      const button = document.createElement("button");
+      button.textContent = letter;
+      button.className = "key";
+      button.addEventListener("click", () => {
+        const keyboardSound = new Audio("./assets/sounds/keyboard-sound.wav");
+        keyboardSound.currentTime = 0;
+        keyboardSound.play();
+        button.disabled = true;
 
-          let correct = false;
-          Array.from(word).forEach((wordLetter, index) => {
-            if (wordLetter === letter) {
-              letterSpans[index].textContent = letter;
-              correct = true;
-            }
-          });
-          if (!correct) {
-            incorrectGuessCount += 1;
-            counterSpan.textContent = incorrectGuessCount;
-
-            const hangmanImage = document.createElement("img");
-            hangmanImage.src = hangmanParts[incorrectGuessCount];
-            hangmanImage.id = "part" + incorrectGuessCount;
-            hangmanImage.alt = "Hangman Part";
-            gallowsDiv.append(hangmanImage);
-          }
-          if (letterSpans.every((span) => span.textContent !== "_")) {
-            showModal(`Yes! It's ${word}. Congratulations!`);
-            restartButton.textContent = "Next Round";
-          }
-          if (incorrectGuessCount === 6) {
-            showModal(`You've lost. Your word was ${word}`);
-            restartButton.textContent = "Try Again";
+        let correct = false;
+        Array.from(word).forEach((wordLetter, index) => {
+          if (wordLetter === letter) {
+            letterSpans[index].textContent = letter;
+            correct = true;
           }
         });
-        keyboardDiv.append(button);
+        if (!correct) {
+          incorrectGuessCount += 1;
+          counterSpan.textContent = incorrectGuessCount;
+
+          const hangmanImage = document.createElement("img");
+          hangmanImage.src = hangmanParts[incorrectGuessCount];
+          hangmanImage.id = "part" + incorrectGuessCount;
+          hangmanImage.alt = "Hangman Part";
+          gallowsDiv.append(hangmanImage);
+        }
+        if (letterSpans.every((span) => span.textContent !== "_")) {
+          showModal(`Yes! It's ${word}. Congratulations!`);
+          restartButton.textContent = "Next Round";
+        }
+        if (incorrectGuessCount === 6) {
+          showModal(`You've lost. Your word was ${word}`);
+          restartButton.textContent = "Try Again";
+        }
       });
+      keyboardDiv.append(button);
     });
+  } catch (err) {
+    console.log(err);
+  }
 }
+
 fetchNewQuestion();
