@@ -1,6 +1,7 @@
 const body = document.body;
 
 let incorrectGuessCount = 0;
+const keyboardSound = new Audio("./assets/sounds/keyboard-sound.wav");
 
 body.innerHTML = `
 <main id="main">
@@ -111,11 +112,7 @@ async function fetchNewQuestion() {
       button.textContent = letter;
       button.className = "key";
       button.addEventListener("click", () => {
-        const keyboardSound = new Audio("./assets/sounds/keyboard-sound.wav");
-        keyboardSound.currentTime = 0;
-        keyboardSound.play();
-        button.disabled = true;
-
+        playSound(button);
         let correct = false;
         Array.from(word).forEach((wordLetter, index) => {
           if (wordLetter === letter) {
@@ -150,3 +147,9 @@ async function fetchNewQuestion() {
 }
 
 fetchNewQuestion();
+
+function playSound(button) {
+  keyboardSound.currentTime = 0;
+  keyboardSound.play();
+  button.disabled = true;
+}
